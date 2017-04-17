@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/jlouns/gulp-requirejs-optimize#readme"
-
-    >gulp-requirejs-optimize (v1.2.0)</a>
+    <a href="https://github.com/jlouns/gulp-requirejs-optimize#readme">gulp-requirejs-optimize (v1.2.0)</a>
 </h1>
 <h4>RequireJS optimizer plugin for gulp</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-requirejs-optimize">module gulp-requirejs-optimize</a><ol>
 
@@ -108,9 +101,9 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">gulp-requirejs-optimize = function (options) {
-	requirejs.define(&#x27;node/print&#x27;, [], function() {
+	requirejs.define('node/print', [], function() {
 		return function(msg) {
-			if (msg.substring(0, 5) === &#x27;Error&#x27;) {
+			if (msg.substring(0, 5) === 'Error') {
 				gutil.log(chalk.red(msg));
 			} else {
 				gutil.log(msg);
@@ -121,7 +114,7 @@
 	options = options || {};
 
 	var generateOptions;
-	if (typeof options === &#x27;function&#x27;) {
+	if (typeof options === 'function') {
 		generateOptions = options;
 	} else {
 		generateOptions = function() {
@@ -138,13 +131,13 @@
 		}
 
 		if (file.isStream()) {
-			cb(new gutil.PluginError(PLUGIN_NAME, &#x27;Streaming not supported&#x27;));
+			cb(new gutil.PluginError(PLUGIN_NAME, 'Streaming not supported'));
 			return;
 		}
 
 		var optimizeOptions = generateOptions(file);
-		if (typeof optimizeOptions !== &#x27;object&#x27;) {
-			cb(new gutil.PluginError(PLUGIN_NAME, &#x27;Options function must produce an options object&#x27;));
+		if (typeof optimizeOptions !== 'object') {
+			cb(new gutil.PluginError(PLUGIN_NAME, 'Options function must produce an options object'));
 			return;
 		}
 
@@ -163,12 +156,12 @@
 			});
 		}
 
-		if (!optimizeOptions.include &#x26;&#x26; !optimizeOptions.name) {
+		if (!optimizeOptions.include &amp;&amp; !optimizeOptions.name) {
 			optimizeOptions.include = pathToModuleId(file.relative);
 		}
 
-		if (typeof optimizeOptions.out !== &#x27;string&#x27;) {
-			cb(new gutil.PluginError(PLUGIN_NAME, &#x27;If `out` is supplied, it must be a string&#x27;));
+		if (typeof optimizeOptions.out !== 'string') {
+			cb(new gutil.PluginError(PLUGIN_NAME, 'If `out` is supplied, it must be a string'));
 			return;
 		}
 
@@ -176,7 +169,7 @@
 		optimizeOptions.out = function(text, sourceMapText) {
 			if (sourceMapPresent) {
 				// uglify adds its own sourceMappingURL comment which will get duplicated by gulp-sourcemaps
-				text = text.replace(/\/\/# sourceMappingURL=.*$/, &#x27;&#x27;);
+				text = text.replace(/\/\/# sourceMappingURL=.*$/, '');
 			}
 
 			var outfile = new gutil.File({
@@ -192,13 +185,13 @@
 		};
 
 		var target;
-		if (optimizeOptions.logLevel &#x3c; 2) {
+		if (optimizeOptions.logLevel &lt; 2) {
 			target = path.resolve(file.path);
 		} else {
 			target = file.relative;
 		}
 
-		gutil.log(&#x27;Optimizing &#x27; + chalk.magenta(target));
+		gutil.log('Optimizing ' + chalk.magenta(target));
 		requirejs.optimize(optimizeOptions, null, function(err) {
 			error = err;
 			cb();
@@ -256,3 +249,4 @@
     ]
 </div>
 </div>
+</body></html>
