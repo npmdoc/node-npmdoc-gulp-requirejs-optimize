@@ -1,9 +1,11 @@
 # api documentation for  [gulp-requirejs-optimize (v1.2.0)](https://github.com/jlouns/gulp-requirejs-optimize#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-requirejs-optimize.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-requirejs-optimize) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-requirejs-optimize.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-requirejs-optimize)
 #### RequireJS optimizer plugin for gulp
 
-[![NPM](https://nodei.co/npm/gulp-requirejs-optimize.png?downloads=true)](https://www.npmjs.com/package/gulp-requirejs-optimize)
+[![NPM](https://nodei.co/npm/gulp-requirejs-optimize.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-requirejs-optimize)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-requirejs-optimize/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-requirejs-optimize_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-requirejs-optimize/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-requirejs-optimize/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-requirejs-optimize/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-requirejs-optimize/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-requirejs-optimize/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-requirejs-optimize/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +20,6 @@
 {
     "author": {
         "name": "Jonathan Lounsbury",
-        "email": "jlouns@gmail.com",
         "url": "https://github.com/jlouns"
     },
     "bugs": {
@@ -61,13 +62,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "jlouns",
-            "email": "jlouns@gmail.com"
+            "name": "jlouns"
         }
     ],
     "name": "gulp-requirejs-optimize",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jlouns/gulp-requirejs-optimize.git"
@@ -98,16 +97,6 @@
     }
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-requirejs-optimize](#apidoc.module.gulp-requirejs-optimize)
-
-
-
-# <a name="apidoc.module.gulp-requirejs-optimize"></a>[module gulp-requirejs-optimize](#apidoc.module.gulp-requirejs-optimize)
 
 
 
