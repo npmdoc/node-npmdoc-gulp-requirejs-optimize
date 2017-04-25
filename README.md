@@ -1,4 +1,7 @@
-# api documentation for  [gulp-requirejs-optimize (v1.2.0)](https://github.com/jlouns/gulp-requirejs-optimize#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-requirejs-optimize.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-requirejs-optimize) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-requirejs-optimize.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-requirejs-optimize)
+# npmdoc-gulp-requirejs-optimize
+
+#### basic api documentation for  [gulp-requirejs-optimize (v1.2.0)](https://github.com/jlouns/gulp-requirejs-optimize#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-requirejs-optimize.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-requirejs-optimize) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-requirejs-optimize.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-requirejs-optimize)
+
 #### RequireJS optimizer plugin for gulp
 
 [![NPM](https://nodei.co/npm/gulp-requirejs-optimize.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-requirejs-optimize)
@@ -94,7 +97,8 @@
                 }
             ]
         }
-    }
+    },
+    "bin": {}
 }
 ```
 
